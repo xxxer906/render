@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: linux-desktop-env
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: SSH_PORT
+        value: "2222" # Change as needed
